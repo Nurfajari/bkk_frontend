@@ -6,7 +6,11 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'jura': 'jura',
+    }
   },
+
   plugins: [],
 }
 

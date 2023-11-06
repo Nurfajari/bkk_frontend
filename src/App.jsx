@@ -1,20 +1,17 @@
-import Button from './component/Button'
-import Navbar from './component/Navbar'
-import TopNavbar from './component/TopNavbar'
-import './index.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import IndexAdmin from "./Pages/Admin/IndexAdmin";
 
-export default function App() 
-{
+export default function App() {
   return (
-    <div className="p-5">
-      <div className="grid grid-cols-12">
-        <div className="col-span-2">
-          <Navbar></Navbar>
-        </div>
-        <div className="col-span-10">
-          <TopNavbar></TopNavbar>
-        </div>
-      </div>
-    </div>
-  )
+    <>
+      <Router>
+        <Routes>
+          {/* TODO Sementara path nya '/admin' dulu nanti diganti '/' sama kaya alumni dashboard */}
+          <Route path="/admin" Component={IndexAdmin} />
+          <Route path="*" element={<h1 className="text-5xl text-center mt-10">Page Not Found</h1>} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
