@@ -16,7 +16,7 @@ const TopNavbar = () => {
   // }, []);
 
   return (
-    <div className="bg-white ms-5 p-4 rounded-xl">
+    <div className="bg-white ms-5 p-4 rounded-xl h-[1200px]">
       <div className="flex gap-3">
         <div className="bg-slate-200 p-2 inline-block px-6 rounded-md">
           <p className="flex gap-2">
