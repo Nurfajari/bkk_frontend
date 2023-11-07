@@ -4,6 +4,7 @@ import IndexAdmin from "./Pages/Admin/IndexAdmin";
 import AkunAdmin from "./Pages/Admin/AkunAdmin";
 import Perusahaan from "./Pages/Admin/Perusahaan";
 import Lowongan from "./Pages/Admin/Lowongan";
+import ChatLowongan from "./Pages/Admin/ChatLowongan";
 import Pelamar from "./Pages/Admin/Pelamar";
 import AdminLayout from "./Layout/AdminLayout";
 
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="akun-admin" element={<AkunAdmin />} />
             <Route path="perusahaan" element={<Perusahaan />} />
             <Route path="lowongan" element={<Lowongan />} />
+            <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
           <Route

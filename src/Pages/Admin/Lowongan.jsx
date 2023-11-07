@@ -44,13 +44,13 @@ const Lowongan = () => {
               <li>Lorem ipsum dolor sit amet.</li>
             </ul>
             <div className="flex justify-end gap-x-3">
-              <button className="border-black border-2 rounded-md p-[1px] hover:bg-black hover:text-white transition-all duration-300 drop-shadow-md">
+              <Link to='1' className="border-black border-2 rounded-md p-[1px] hover:bg-black hover:text-white transition-all duration-300 drop-shadow-md">
                 <IconTrash className="w-8 h-8" />
-              </button>
-              <button className="bg-black text-white border-black border-2 rounded-md py-[1px] px-4 flex gap-x-2 items-center hover:bg-inherit hover:text-black transition-all duration-300 drop-shadow-md">
+              </Link>
+              <Link to='1' className="bg-black text-white border-black border-2 rounded-md py-[1px] px-4 flex gap-x-2 items-center hover:bg-inherit hover:text-black transition-all duration-300 drop-shadow-md">
                 <IconMessage className="w-8 h-8" />
                 <span className="text-xl">Chat</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
