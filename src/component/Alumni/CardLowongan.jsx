@@ -1,22 +1,23 @@
+import { IconChevronCompactDown, IconFilePencil } from "@tabler/icons-react";
 import Button from "./Button";
 
 export default function CardLowongan()
 {
     return(
-        <div className="border-solid border-2 border-slate-800">
-            <div className=" flex">
+        <div className="bg-white rounded-xl">
+            <div className="p-2">
+                <div className="p-2 flex justify-between items-center border-b-2 mb-2 border-slate-300">
+                    <div className="">
+                        <h1 className="text-3xl mb-2">PT Verta Logistic</h1>
+                        <h1 className="text-green-500">*Lowongan Buka</h1>
+                    </div>
+                    <div className="">
+                        <Button text="Detail" className="font-semibold"><IconChevronCompactDown/></Button>
+                    </div>
+                </div>
                 <div className=" p-2">
-                    <img src="Img/card_img.jpg" className="w-60" alt="" />
+                    <img src="Img/card_img.jpg" className="w-full h-40 object-cover rounded-md" alt="" />
                 </div>
-                <div className="p-2">
-                    <h1 className="text-3xl">Nama Perusahaan</h1>
-                    <h1 className="italic">Alamat : ...</h1>
-                    <h1 className="text-green-500">*Lowongan Buka</h1>
-                </div>
-            </div>
-            <div className="flex items-end gap-2 m-2">
-                <Button text="Detail" className=""></Button>
-                <Button text="Daftar"></Button>
             </div>
         </div>
     )
