@@ -7,6 +7,7 @@ import Lowongan from "./Pages/Admin/Lowongan";
 import ChatLowongan from "./Pages/Admin/ChatLowongan";
 import Pelamar from "./Pages/Admin/Pelamar";
 import AdminLayout from "./Layout/AdminLayout";
+import IndexAlumni from "./Pages/Alumni/IndexAlumni";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
+          <Route path="/alumni" element={<IndexAlumni/>}></Route>
           <Route
             path="*"
             element={
