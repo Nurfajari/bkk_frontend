@@ -22,6 +22,7 @@ export default function Footer()
                             {/* <p><IconBrandFacebook/></p> */}
                             <p>Facebook : SMK Negeri 1 Cirebon</p>
                             <p>Instagram : @smkn1crb</p>
+                            <p>Instagram : @smkn1crb</p>
                             <p>Youtube : SMK Negeri 1 Cirebon Official</p>
                         </div>
                     </div>
