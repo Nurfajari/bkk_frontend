@@ -4,5 +4,13 @@
 
 @font-face {
   font-family: jura;
-  src: url('Fonts/Jura/Jura-VariableFont_wght.ttf');
+  src: url('/fonts/Jura/Jura-VariableFont_wght.ttf');
+}
+
+/* .underline-hover{
+  @apply border-b-[1px] border-black w-0 hover:w-full transition-all duration-500
+} */
+
+.card-admin {
+  @apply bg-white p-5 rounded-xl h-fit drop-shadow-lg
 }
