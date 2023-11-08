@@ -24,16 +24,12 @@ export default function IndexAlumni()
                     </div>
                     <div className="text-center py-7 flex items-center justify-center">
                         <div className="">
-                            <marquee behavior="" direction="up" className="">
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
-                                <h1 className="text-4xl mb-5 text-white">Logo Perusahaan</h1>
+                            <marquee behavior="" direction="up">
+                                <img src="Img/logo2.png" className="w-64" alt="" />
+                                <img src="Img/Morfonica.png" className="w-64" alt="" />
+                                <img src="Img/Pastel_Palettes.png" className="w-64" alt="" />
+                                <img src="Img/Roselia.png" className="w-64" alt="" />
+                                <img src="Img/RAS.png" className="w-64" alt="" />
                             </marquee>
                         </div>
                     </div>
