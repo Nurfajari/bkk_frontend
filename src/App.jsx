@@ -26,7 +26,8 @@ export default function App() {
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
           {/* NOTE Route alumni belum bisa memanggil page */}
-          <Route path="/alumni" element={<IndexAlumni/>}>
+          <Route path="/alumni">
+            <Route index element={<IndexAlumni />} />
             <Route path="lowongan" element={<AkunAdmin />} />
             <Route path="perusahaan" element={<PagePerusahaan />} />
           </Route>
