@@ -15,7 +15,7 @@ export default function IndexAlumni()
                     <Button text="Get Started" className="mt-8 bg-black text-white py-1 px-5"></Button>
                 </div>
             </div>
-            <div className="bg-black">
+            <div className="bg-black mb-5">
                 <div className="grid grid-cols-2 auto-cols-auto	">
                     <div className="flex items-center justify-center">
                         <div className="">
@@ -36,6 +36,7 @@ export default function IndexAlumni()
                 </div>
             </div>
             <div className="">
+                <h1 className="text-center text-3xl">Lowongan</h1>
                 <div className="p-3 py-10 grid grid-cols-2 gap-5">
                     <CardLowongan></CardLowongan>
                     <CardLowongan></CardLowongan>

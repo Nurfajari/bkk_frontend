@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function CardLowongan()
 {
     return(
-        <div className="bg-white rounded-xl">
+        <div className="bg-white">
             <div className="p-2">
                 <div className="p-2 flex justify-between items-center border-b-2 mb-2 border-slate-300">
                     <div className="">
