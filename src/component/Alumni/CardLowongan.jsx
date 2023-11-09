@@ -16,7 +16,7 @@ export default function CardLowongan()
                     </div>
                 </div>
                 <div className=" p-2">
-                    <img src="Img/card_img.jpg" className="w-full h-40 object-cover rounded-md" alt="" />
+                    <img src="/Img/card_img.jpg" className="w-full h-40 object-cover rounded-md" alt="" />
                 </div>
             </div>
         </div>

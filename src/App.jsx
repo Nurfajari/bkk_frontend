@@ -9,6 +9,7 @@ import Pelamar from "./Pages/Admin/Pelamar";
 import AdminLayout from "./Layout/AdminLayout";
 import IndexAlumni from "./Pages/Alumni/IndexAlumni";
 import PagePerusahaan from "./Pages/Alumni/Perusahaan";
+import AlumniLowongan from "./Pages/Alumni/Lowongan";
 
 export default function App() {
   return (
@@ -28,7 +29,7 @@ export default function App() {
           {/* NOTE Route alumni belum bisa memanggil page */}
           <Route path="/alumni">
             <Route index element={<IndexAlumni />} />
-            <Route path="lowongan" element={<AkunAdmin />} />
+            <Route path="lowongan" element={<AlumniLowongan />} />
             <Route path="perusahaan" element={<PagePerusahaan />} />
           </Route>
           <Route
