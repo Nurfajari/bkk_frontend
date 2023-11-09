@@ -37,7 +37,7 @@ export default function Footer()
                                 <a href="">Lowongan</a>
                             </div>
                             <div className="">
-                                <a href="">Perushaan</a>
+                                <a href="">Perusahaan</a>
                             </div>
                         </div>
                     </div>
