@@ -12,7 +12,9 @@ const AdminLayout = () => {
           </div>
           <div className="col-span-10 flex flex-col gap-y-5 ms-5">
             <TopNavbar />
+            <div className="z-10">
             <Outlet />
+            </div>
           </div>
         </div>
       </div>

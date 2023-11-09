@@ -51,7 +51,7 @@ const TopNavbar = () => {
         </div>
         <div
           className={
-            "transition-all duration-500 absolute bg-white w-max h-fit right-0 p-3 rounded-xl text-[16px] flex flex-col gap-y-2 cursor-default " +
+            "transition-all duration-500 absolute z-50 bg-white w-max h-fit right-0 p-3 rounded-xl text-[16px] flex flex-col gap-y-2 cursor-default " +
             (openMenuProfile
               ? "bottom-[-100px] opacity-100"
               : "bottom-[0px] opacity-0")
