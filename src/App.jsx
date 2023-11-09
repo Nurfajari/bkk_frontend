@@ -8,6 +8,7 @@ import ChatLowongan from "./Pages/Admin/ChatLowongan";
 import Pelamar from "./Pages/Admin/Pelamar";
 import AdminLayout from "./Layout/AdminLayout";
 import IndexAlumni from "./Pages/Alumni/IndexAlumni";
+import PagePerusahaan from "./Pages/Alumni/Perusahaan";
 
 export default function App() {
   return (
@@ -24,7 +25,11 @@ export default function App() {
             <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
-          <Route path="/alumni" element={<IndexAlumni/>}></Route>
+          {/* NOTE Route alumni belum bisa memanggil page */}
+          <Route path="/alumni" element={<IndexAlumni/>}>
+            <Route path="lowongan" element={<AkunAdmin />} />
+            <Route path="perusahaan" element={<PagePerusahaan />} />
+          </Route>
           <Route
             path="*"
             element={

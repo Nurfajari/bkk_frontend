@@ -9,9 +9,9 @@ export default function Navbar()
                     <img src="Img/logo.png" className="w-8 rounded-full" alt="" />
                 </div>
                 <div className="flex gap-10 font-bold">
-                    <a href="">Home</a>
-                    <a href="">Lowongan</a>
-                    <a href="">Perusahaan</a>
+                    <a href="/alumni">Home</a>
+                    <a href="/alumni/lowongan">Lowongan</a>
+                    <a href="/alumni/perusahaan">Perusahaan</a>
                     <a href="">Logout</a>
                 </div>
             </div>
