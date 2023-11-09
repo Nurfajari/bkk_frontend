@@ -24,7 +24,9 @@ export default function App() {
             <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
-          <Route path="/alumni" element={<IndexAlumni/>}></Route>
+          <Route path="/alumni" element={<IndexAlumni/>}>
+            
+          </Route>
           <Route path ="/pelamar" element={<h1>Halaman belum dibuat</h1>}>
             
           </Route>
