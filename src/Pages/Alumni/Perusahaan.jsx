@@ -5,6 +5,9 @@ export default function PagePerusahaan()
     return(
         <div className="">
             <Navbar></Navbar>
+            <div className="">
+                
+            </div>
         </div>
     )
 }
