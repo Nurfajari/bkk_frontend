@@ -31,13 +31,13 @@ export default function Footer()
                         </div>
                         <div className="">
                             <div className="">
-                                <a href="">Home</a>
+                                <a href="/alumni">Home</a>
                             </div>
                             <div className="">
-                                <a href="">Lowongan</a>
+                                <a href="/alumni/lowongan">Lowongan</a>
                             </div>
                             <div className="">
-                                <a href="">Perusahaan</a>
+                                <a href="/alumni/perusahaan">Perusahaan</a>
                             </div>
                         </div>
                     </div>

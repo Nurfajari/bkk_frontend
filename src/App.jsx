@@ -37,7 +37,9 @@ export default function App() {
           <Route
             path="*"
             element={
-              <h1 className="text-5xl text-center mt-10">Page Not Found</h1>
+              <div className="h-screen w-full">
+                <img src="img/page-not-found.png" alt="" className="image-cover object-center" />
+              </div>
             }
           />
         </Routes>
