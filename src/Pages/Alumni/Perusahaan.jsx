@@ -1,4 +1,5 @@
 import CardPerusahaan from "../../component/Alumni/CardPerusahaan";
+import Footer from "../../component/Alumni/Footer";
 import Navbar from "../../component/Alumni/Navbar";
 
 export default function PagePerusahaan()
@@ -13,6 +14,7 @@ export default function PagePerusahaan()
                 <CardPerusahaan></CardPerusahaan>
                 <CardPerusahaan></CardPerusahaan>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

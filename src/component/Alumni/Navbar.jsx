@@ -8,11 +8,11 @@ export default function Navbar()
                 <div className="">
                     <img src="/Img/logo.png" className="w-8 rounded-full" alt="" />
                 </div>
-                <div className="flex gap-10 font-bold">
-                    <a href="/alumni">Home</a>
-                    <a href="/alumni/lowongan">Lowongan</a>
-                    <a href="/alumni/perusahaan">Perusahaan</a>
-                    <a href="">Logout</a>
+                <div className="flex gap-12 font-bold">
+                    <a href="/alumni" className="hover:bg-black hover:text-white hover:px-5 transition-all ease-in-out delay-150">Home</a>
+                    <a href="/alumni/lowongan" className="hover:bg-black hover:text-white hover:px-5 transition-all ease-in-out delay-150">Lowongan</a>
+                    <a href="/alumni/perusahaan" className="hover:bg-black hover:text-white hover:px-5 transition-all ease-in-out delay-150">Perusahaan</a>
+                    <a href="" className="hover:bg-black hover:text-white hover:px-5 transition-all ease-in-out delay-150">Logout</a>
                 </div>
             </div>
         </nav>
