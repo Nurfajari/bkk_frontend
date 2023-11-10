@@ -36,7 +36,7 @@ export default function App() {
             path="*"
             element={
               <div className="h-screen w-full">
-                <img src="img/page-not-found.png" alt="" className="image-cover object-center" />
+                <img src="/Img/page-not-found.png" alt="" className="image-cover object-center" />
               </div>
             }
           />
