@@ -1,11 +1,12 @@
 import { IconMessage } from "@tabler/icons-react";
 import { IconSearch, IconTrash } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+import CardLowongan from "../../component/Admin/CardLowongan";
 
 const Lowongan = () => {
   return (
     <>
-      <div className="card-admin flex flex-col gap-y-5">
+      <div className="card-admin flex flex-col gap-y-5 mb-3">
         <div className="flex justify-between">
           <h1 className="text-3xl">Lowongan</h1>
           <div className="flex gap-x-5">
@@ -24,7 +25,8 @@ const Lowongan = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#efefef] rounded-lg p-4 flex gap-x-5">
+        <CardLowongan></CardLowongan>
+        {/* <div className="bg-[#efefef] rounded-lg p-4 flex gap-x-5">
           <div className="flex-initial bg-[#D9D9D9] rounded-md text-center text-4xl">
             Image
           </div>
@@ -53,7 +55,7 @@ const Lowongan = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
