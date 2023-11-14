@@ -6,8 +6,7 @@ import Navbar from "../../component/Alumni/Navbar";
 export default function IndexAlumni()
 {
     return(
-        <div className="snap-y">
-            <Navbar></Navbar>
+        <>
             <div className="text-center py-20 h-[550px] snap-start">
                 <div className="m-10">
                     <h1 className="font-jura font-semibold text-3xl mb-5">Welcome to BKK <span className="text-white bg-black py-1 px-3">SMK Negeri 1 Kota Cirebon</span></h1>
@@ -44,9 +43,6 @@ export default function IndexAlumni()
                     <CardLowongan />
                 </div>
             </div>
-            <div className="">
-                <Footer />
-            </div>
-        </div>
+        </>
     )
 }
