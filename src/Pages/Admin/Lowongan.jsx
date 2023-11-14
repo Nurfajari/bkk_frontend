@@ -1,30 +1,33 @@
 import { IconMessage } from "@tabler/icons-react";
 import { IconSearch, IconTrash } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+import CardLowongan from "../../component/Admin/CardLowongan";
 
 const Lowongan = () => {
   return (
     <>
-      <div className="card-admin flex flex-col gap-y-5">
-        <div className="flex justify-between">
-          <h1 className="text-3xl">Lowongan</h1>
+      <div className="card-admin flex flex-col gap-y-5 mb-3">
+      <div className="flex justify-between">
+          <h1 className="text-2xl">Lowongan</h1>
           <div className="flex gap-x-5">
-            <button className="text-3xl text-white px-3 font-bold rounded-md bg-black drop-shadow-md">
+            <button className="text-3xl text-white px-3 font-bold rounded-md bg-black">
               +
             </button>
             <div className="border-[1px] border-black/40 rounded-md overflow-hidden relative">
               <input
                 type="text"
-                className="focus:outline-none text-xl pl-1 pr-8 pt-[2px] placeholder:text-black/50"
+                className="focus:outline-none text-md pl-2 pr-8 pt-[3px] placeholder:text-black/50"
                 placeholder="Search..."
               />
-              <div className="absolute right-0 top-0 bottom-0">
-                <IconSearch className="w-8 h-8" />
+              <div className="absolute right-2 top-1 bottom-0">
+                <IconSearch className="w-6 h-6" stroke={1} />
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-[#efefef] rounded-lg p-4 flex gap-x-5">
+        <CardLowongan></CardLowongan>
+        <CardLowongan></CardLowongan>
+        {/* <div className="bg-[#efefef] rounded-lg p-4 flex gap-x-5">
           <div className="flex-initial bg-[#D9D9D9] rounded-md text-center text-4xl">
             Image
           </div>
@@ -53,7 +56,7 @@ const Lowongan = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -16,6 +16,7 @@ import PagePerusahaan from "./Pages/Alumni/Perusahaan";
 import AlumniLowongan from "./Pages/Alumni/Lowongan";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
+import AlumniLowonganDetail from "./Pages/Alumni/LowonganDetail";
 
 export default function App() {
   const statusLoginUser = localStorage.getItem("statusLogin") ?? null;
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/alumni">
             <Route index element={<IndexAlumni />} />
             <Route path="lowongan" element={<AlumniLowongan />} />
+            <Route path="lowongan/detail" element={<AlumniLowonganDetail />} />
             <Route path="perusahaan" element={<PagePerusahaan />} />
           </Route>
 
