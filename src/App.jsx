@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import IndexAdmin from "./Pages/Admin/IndexAdmin";
 import AkunAdmin from "./Pages/Admin/AkunAdmin";
@@ -20,10 +16,10 @@ import AlumniLowonganDetail from "./Pages/Alumni/LowonganDetail";
 
 export default function App() {
   const statusLoginUser = localStorage.getItem("statusLogin") ?? null;
-  const parseStatusLoginUser = JSON.parse(statusLoginUser)
+  const parseStatusLoginUser = JSON.parse(statusLoginUser);
 
-  console.log('statusLogin', JSON.parse(statusLoginUser));
-  
+  console.log("statusLogin", JSON.parse(statusLoginUser));
+
   return (
     <>
       <Router>
@@ -34,10 +30,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          <Route path="/" element={
-            parseStatusLoginUser.role == 'alumni' ? <IndexAlumni /> :
-            <AdminLayout />
-          }>
+          <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<IndexAdmin />} />
             <Route path="akun-admin" element={<AkunAdmin />} />
             <Route path="perusahaan" element={<Perusahaan />} />
