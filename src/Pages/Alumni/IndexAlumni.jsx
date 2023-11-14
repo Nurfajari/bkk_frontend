@@ -7,7 +7,7 @@ export default function IndexAlumni()
 {
     return(
         <div className="">
-            <Navbar></Navbar>
+            <Navbar />
             <div className="text-center py-20 h-[550px]">
                 <div className="m-10">
                     <h1 className="font-jura font-semibold text-3xl mb-5">Welcome to BKK SMK Negeri 1 Kota Cirebon</h1>
@@ -38,14 +38,14 @@ export default function IndexAlumni()
             <div className="">
                 <h1 className="text-center text-3xl">Lowongan</h1>
                 <div className="p-3 py-10 grid grid-cols-2 gap-5">
-                    <CardLowongan></CardLowongan>
-                    <CardLowongan></CardLowongan>
-                    <CardLowongan></CardLowongan>
-                    <CardLowongan></CardLowongan>
+                    <CardLowongan />
+                    <CardLowongan />
+                    <CardLowongan />
+                    <CardLowongan />
                 </div>
             </div>
             <div className="">
-                <Footer></Footer>
+                <Footer />
             </div>
         </div>
     )
