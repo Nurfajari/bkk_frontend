@@ -1,6 +1,7 @@
 import { IconChevronCompactDown, IconFilePencil } from "@tabler/icons-react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import { IconTrash } from "@tabler/icons-react";
 
 export default function CardLowongan()
 {
@@ -18,18 +19,25 @@ export default function CardLowongan()
                 </div>
                 <div className="p-2 flex gap-3">
                     <img src="/Img/card_img.jpg" className="w-[50%] h-auto object-cover rounded-md" alt="" />
-                    <div className="">
-                        <div className="mb-3">                            
-                            <b>Alamat :</b>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam ducimus nemo, excepturi aut non saepe. Expedita, facere praesentium illo accusamus aperiam, eius similique in ea dolorem et neque fugiat.</p>
+                    <div className="flex flex-col justify-between">
+                        <div className="">
+                            <div className="mb-3">                            
+                                <b>Alamat :</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam ducimus nemo, excepturi aut non saepe. Expedita, facere praesentium illo accusamus aperiam, eius similique in ea dolorem et neque fugiat.</p>
+                            </div>
+                            <div className="">
+                                <b>Kualifikasi :</b>
+                                <ul className="list-disc list-inside ps-3">
+                                    <li>Maks 25 tahun</li>
+                                    <li>Pekerja keras</li>
+                                    <li>Dll</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="">
-                            <b>Kualifikasi :</b>
-                            <ul className="list-disc list-inside">
-                                <li>Maks 25 tahun</li>
-                                <li>Pekerja keras</li>
-                                <li>Dll</li>
-                            </ul>
+                            <a href="" className="py-1 px-5 bg-red-600 text-white rounded-sm flex items-center justify-center">
+                                <IconTrash className="text-white"/>hapus
+                            </a>
                         </div>
                     </div>
                 </div>

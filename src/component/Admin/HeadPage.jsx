@@ -1,8 +1,8 @@
-export default function HeadPage(props)
+export default function HeadPage()
 {
     return(
         <div className="flex justify-between">
-            <h1 className="text-2xl">{props.text}</h1>
+            <h1 className="text-2xl"></h1>
             <div className="flex gap-x-5">
                 <button className="text-3xl text-white px-3 font-bold rounded-md bg-black">
                     +
