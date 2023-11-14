@@ -1,13 +1,31 @@
 import { IconEye, IconEyeOff, IconLogin2, IconUser } from "@tabler/icons-react"
 import { IconReload } from "@tabler/icons-react"
-import { useState } from "react"
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 const Register = () => {
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')
   const [showPassword, setShowPassword] = useState(false);
   const [loadingLogin, setLoadingLogin] = useState(false);
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    // Cek apakah sudah login dan role nya adalah alumni
+    if (
+      localStorage.getItem("statusLogin") &&
+      JSON.parse(localStorage.getItem("statusLogin")).role == "alumni"
+    )
+      return navigate("/alumni");
+
+    // Cek apakah sudah login dan role nya adalah admin atau super-admin
+    if (
+      localStorage.getItem("statusLogin") &&
+      (JSON.parse(localStorage.getItem("statusLogin")).role == "admin" ||
+        JSON.parse(localStorage.getItem("statusLogin")).role == "super-admin")
+    )
+      return navigate("/admin");
+  }, []);
 
   const handleSubmitRegister = async (e) => {
     e.preventDefault();

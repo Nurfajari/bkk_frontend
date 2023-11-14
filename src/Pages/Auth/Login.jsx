@@ -1,7 +1,7 @@
 import { IconReload } from "@tabler/icons-react";
 import { IconEye, IconEyeOff, IconLogin2, IconUser } from "@tabler/icons-react";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -13,6 +13,23 @@ const Login = () => {
   const [isFailedLogin, setIsFailedLogin] = useState(false);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Cek apakah sudah login dan role nya adalah alumni
+    if (
+      localStorage.getItem("statusLogin") &&
+      JSON.parse(localStorage.getItem("statusLogin")).role == "alumni"
+    )
+      return navigate("/alumni");
+
+    // Cek apakah sudah login dan role nya adalah admin atau super-admin
+    if (
+      localStorage.getItem("statusLogin") &&
+      (JSON.parse(localStorage.getItem("statusLogin")).role == "admin" ||
+        JSON.parse(localStorage.getItem("statusLogin")).role == "super-admin")
+    )
+      return navigate("/admin");
+  }, []);
 
   const handleSubmitLogin = async (e) => {
     e.preventDefault();
@@ -63,10 +80,10 @@ const Login = () => {
           }
         });
     } catch (error) {
-      setLoadingLogin(false)
-      setIsFailedLogin(true)
+      setLoadingLogin(false);
+      setIsFailedLogin(true);
       console.error(error);
-      setMessageFailedLogin(error.response.data.message)
+      setMessageFailedLogin(error.response.data.message);
     }
     // e.eventPreventDefault();
     console.log("Submit Login");
@@ -83,11 +100,11 @@ const Login = () => {
           className="image-cover object-center"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/20 p-5 min-w-[400px] rounded-2xl border-2 border-white backdrop-blur-sm">
-        {isFailedLogin ? (
-          <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500/50 p-5 min-w-[400px] rounded-2xl text-white">
-            {messageFailedLogin}
-          </div>
-        ) : null}
+          {isFailedLogin ? (
+            <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500/50 p-5 min-w-[400px] rounded-2xl text-white">
+              {messageFailedLogin}
+            </div>
+          ) : null}
           <div className="flex items-center gap-x-4 mb-5">
             <img
               src="/Img/LogoSMK.png"
@@ -100,10 +117,7 @@ const Login = () => {
             <p className="text-2xl text-white font-semibold mb-3">Login</p>
             <p className="text-xl text-white ">Welcome login to your account</p>
           </div>
-          <form
-            className="flex flex-col gap-y-4"
-            onSubmit={handleSubmitLogin}
-          >
+          <form className="flex flex-col gap-y-4" onSubmit={handleSubmitLogin}>
             <div className="input-form flex flex-col gap-y-4">
               <div className="p-2 flex bg-white rounded-lg">
                 <input

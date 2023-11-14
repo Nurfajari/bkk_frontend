@@ -13,6 +13,7 @@ import AlumniLowongan from "./Pages/Alumni/Lowongan";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
 import AlumniLowonganDetail from "./Pages/Alumni/LowonganDetail";
+import AlumniLayout from "./Layout/AlumniLayout";
 
 export default function App() {
   const statusLoginUser = localStorage.getItem("statusLogin") ?? null;
@@ -38,7 +39,7 @@ export default function App() {
             <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
-          <Route path="/alumni">
+          <Route path="/alumni" element={<AlumniLayout />}>
             <Route index element={<IndexAlumni />} />
             <Route path="lowongan" element={<AlumniLowongan />} />
             <Route path="lowongan/detail" element={<AlumniLowonganDetail />} />
