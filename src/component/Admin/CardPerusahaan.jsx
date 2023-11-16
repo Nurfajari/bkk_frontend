@@ -1,0 +1,18 @@
+export default function CardPerusahaan()
+{
+    return(
+        <a href="">
+            <div className="bg-white my-5 font-jura border-s-4 border-black shadow-md card-admin">
+                <div className="flex flex-wrap justify-between items-center p-5 py-7">
+                    <div className="">
+                        <h1 className="text-2xl mb-2 font-bold">PT Endfield Industries</h1>
+                        <p>Jl. Raya Cikarang Kemayoran No 27, Kecamatan Beji</p>
+                    </div>
+                    <div className="">
+                        <img src="/Img/logo3.jpg" className="w-24 rounded-full" alt="" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    )
+}
