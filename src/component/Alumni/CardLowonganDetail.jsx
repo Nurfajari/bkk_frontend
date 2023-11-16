@@ -1,4 +1,4 @@
-import { IconChevronCompactDown, IconFilePencil } from "@tabler/icons-react";
+import { IconChevronCompactDown, IconFilePencil, IconMessage } from "@tabler/icons-react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
@@ -23,8 +23,8 @@ export default function CardLowonganDetail()
                         </ol>
                     </div>
                     <div class="flex flex-wrpa gap-2">
-                        <Button className="bg-black w-[80%] rounded-0 text-white py-1 px-2" text="Daftar"></Button>
-                        <Button className="bg-white w-[20%] rounded-0 text-black py-1 px-2 border-neutral-950 border" text="Chat"></Button>
+                        <Button className="bg-black w-[90%] rounded-0 text-white py-1 px-2" text="Daftar"></Button>
+                        <Button className="bg-white w-[10%] rounded-0 text-black py-1 px-2 border-neutral-950 border flex justify-center" text={<IconMessage/>}></Button>
                     </div>
                 </div>
             </div>
