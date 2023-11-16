@@ -22,7 +22,7 @@ export default function CardLowongan()
                     <div className="flex flex-col justify-between">
                         <div className="">
                             <div className="mb-3">                            
-                                <b>Alamat :</b>
+                                <h1 className="text-xl font-medium">Alamat :</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam ducimus nemo, excepturi aut non saepe. Expedita, facere praesentium illo accusamus aperiam, eius similique in ea dolorem et neque fugiat.</p>
                             </div>
                             <div className="">
