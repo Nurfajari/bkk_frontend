@@ -10,14 +10,26 @@ import AdminLayout from "./Layout/AdminLayout";
 import IndexAlumni from "./Pages/Alumni/IndexAlumni";
 import PagePerusahaan from "./Pages/Alumni/Perusahaan";
 import AlumniLowongan from "./Pages/Alumni/Lowongan";
+import Login from "./Pages/Auth/Login";
+import Register from "./Pages/Auth/Register";
 import AlumniLowonganDetail from "./Pages/Alumni/LowonganDetail";
+import AlumniLayout from "./Layout/AlumniLayout";
 
 export default function App() {
+  const statusLoginUser = localStorage.getItem("statusLogin") ?? null;
+  const parseStatusLoginUser = JSON.parse(statusLoginUser);
+
+  console.log("statusLogin", JSON.parse(statusLoginUser));
+
   return (
     <>
       <Router>
         <Routes>
-          {/* TODO Sementara path nya '/admin' dulu nanti diganti '/' sama kaya alumni dashboard */}
+          {/* TODO Sementara path nya '/admin' dulu nanti diganti '/' */}
+
+          {/* Authentication */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<IndexAdmin />} />
@@ -27,18 +39,22 @@ export default function App() {
             <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
           </Route>
-          {/* NOTE Route alumni belum bisa memanggil page */}
-          <Route path="/alumni">
+          <Route path="/alumni" element={<AlumniLayout />}>
             <Route index element={<IndexAlumni />} />
             <Route path="lowongan" element={<AlumniLowongan />} />
             <Route path="lowongan/detail" element={<AlumniLowonganDetail />} />
             <Route path="perusahaan" element={<PagePerusahaan />} />
           </Route>
+
           <Route
             path="*"
             element={
               <div className="h-screen w-full">
-                <img src="/Img/page-not-found.png" alt="" className="image-cover object-center" />
+                <img
+                  src="/Img/page-not-found.png"
+                  alt=""
+                  className="image-cover object-center"
+                />
               </div>
             }
           />
