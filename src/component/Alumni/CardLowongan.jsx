@@ -1,4 +1,4 @@
-import { IconChevronCompactDown, IconFilePencil } from "@tabler/icons-react";
+import { IconChevronCompactDown, IconFilePencil, IconInfoSquareFilled } from "@tabler/icons-react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,9 @@ export default function CardLowongan()
                         <h1 className="text-green-500">*Lowongan Buka</h1>
                     </div>
                     <div className="">
-                        <Link to="/alumni/lowongan/detail" className="font-semibold">Detail</Link>
+                        <Link to="/alumni/lowongan/detail" className="font-semibold">
+                            <IconInfoSquareFilled/>
+                        </Link>
                     </div>
                 </div>
                 <div className=" p-2">

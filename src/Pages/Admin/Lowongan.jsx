@@ -2,29 +2,16 @@ import { IconMessage } from "@tabler/icons-react";
 import { IconSearch, IconTrash } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import CardLowongan from "../../component/Admin/CardLowongan";
+import HeadPage from "../../component/Admin/HeadPage";
 
 const Lowongan = () => {
   return (
     <>
       <div className="card-admin flex flex-col gap-y-5 mb-3">
-      <div className="flex justify-between">
-          <h1 className="text-2xl">Lowongan</h1>
-          <div className="flex gap-x-5">
-            <button className="text-3xl text-white px-3 font-bold rounded-md bg-black">
-              +
-            </button>
-            <div className="border-[1px] border-black/40 rounded-md overflow-hidden relative">
-              <input
-                type="text"
-                className="focus:outline-none text-md pl-2 pr-8 pt-[3px] placeholder:text-black/50"
-                placeholder="Search..."
-              />
-              <div className="absolute right-2 top-1 bottom-0">
-                <IconSearch className="w-6 h-6" stroke={1} />
-              </div>
-            </div>
-          </div>
-        </div>
+        <HeadPage>
+          <HeadPage.Title>Daftar Lowongan</HeadPage.Title>
+          <HeadPage.SearchAdd></HeadPage.SearchAdd>
+        </HeadPage>
         <CardLowongan></CardLowongan>
         <CardLowongan></CardLowongan>
         {/* <div className="bg-[#efefef] rounded-lg p-4 flex gap-x-5">

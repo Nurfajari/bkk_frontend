@@ -44,7 +44,7 @@ const TopNavbar = () => {
       >
         <div className="overflow-hidden rounded-full w-full">
           <img
-            src="/img/profile-admin.jpg"
+            src="./img/profile-admin.jpg"
             alt=""
             className="w-full h-full object-cover object-center"
           />

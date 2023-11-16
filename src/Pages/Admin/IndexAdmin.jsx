@@ -1,8 +1,14 @@
+import { IconSearch } from "@tabler/icons-react";
+import HeadPage from "../../component/Admin/HeadPage";
+
 const IndexAdmin = () => {
   return (
     <>
       <div className="card-admin font-jura">
-        <h1 className="text-3xl">Dashboard Admin</h1>
+        <HeadPage>
+          <HeadPage.Title>Dashboard</HeadPage.Title>
+          <HeadPage.SearchAdd></HeadPage.SearchAdd>
+        </HeadPage>
       </div>
     </>
   );
