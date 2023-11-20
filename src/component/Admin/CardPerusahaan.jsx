@@ -10,7 +10,7 @@ export default function CardPerusahaan()
                         <img src="/Img/logo3.jpg" className="w-24 rounded-full" alt="" />
                     </div>
                     <div className="">
-                        <a href="" className="text-2xl mb-2 font-bold">PT Endfield Industries</a>
+                        <a href="/admin/perusahaan/detail" className="text-2xl mb-2 font-bold">PT Endfield Industries</a>
                         <p>Jl. Raya Cikarang Kemayoran No 27, Kecamatan Beji</p>
                     </div>
                 </div>
