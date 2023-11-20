@@ -7,14 +7,16 @@ export default function CardLowongan()
 {
     return(
         <div className="bg-white shadow-md border rounded-lg">
-            <div className="p-2">
-                <div className="p-2 flex justify-between items-center">
+            <div className="p-2"> 
+                <div className="p-3 flex justify-between items-center">
                     <div className="flex items-center gap-5">
                         <div className="">
-                            <img src="/Img/card_img.jpg" className="w-20 h-20 object-cover rounded-md" alt="" />
+                            <img src="/Img/card_img.jpg" className="w-20 h-20 object-cover rounded-full" alt="" />
                         </div>
                         <div className="">                            
-                            <h1 className="text-3xl mb-2">PT Verta Logistic</h1>
+                            <h1 className="text-3xl mb-2">
+                                <a href="/admin/lowongan/detail">PT Verta Logistic</a>
+                            </h1>
                             <h1 className="text-green-500">*Lowongan Buka</h1>
                         </div>
                     </div>
