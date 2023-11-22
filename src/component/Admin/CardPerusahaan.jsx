@@ -31,7 +31,7 @@ export default function CardPerusahaan({ perusahaanData }) {
                 <IconEdit />
               </a>
             </div>
-            <div className="z-50">
+            <div className="">
               <button
                 onClick={() => {
                   const confirmation = window.confirm(`Apakah Anda yakin ingin menhapus perusahaan ini`);

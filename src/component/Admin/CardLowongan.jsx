@@ -1,4 +1,4 @@
-import { IconChevronCompactDown, IconEdit, IconFilePencil } from "@tabler/icons-react";
+import { IconChevronCompactDown, IconEdit, IconFilePencil, IconInfoCircle } from "@tabler/icons-react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { IconTrash } from "@tabler/icons-react";
@@ -7,19 +7,38 @@ export default function CardLowongan()
 {
     return(
         <div className="bg-white shadow-md border rounded-lg">
-            <div className="p-2">
-                <div className="p-2 flex justify-between items-center border-b-2 mb-2 border-slate-300">
-                    <div className="">
-                        <h1 className="text-3xl mb-2">PT Verta Logistic</h1>
-                        <h1 className="text-green-500">*Lowongan Buka</h1>
+            <div className="p-2"> 
+                <div className="p-3 flex justify-between items-center">
+                    <div className="flex items-center gap-5">
+                        <div className="">
+                            <img src="/Img/card_img.jpg" className="w-20 h-20 object-cover rounded-full" alt="" />
+                        </div>
+                        <div className="">                            
+                            <h1 className="text-3xl mb-2">
+                                <a href="/admin/lowongan/detail">PT Verta Logistic</a>
+                            </h1>
+                            <h1 className="text-green-500">*Lowongan Buka</h1>
+                        </div>
                     </div>
-                    <div className="">
-                        <Link to="/alumni/lowongan/detail" className="font-semibold">
-                            <IconEdit/>
-                        </Link>
+                    <div className="flex gap-2">
+                        <a href="" className="bg-black text-white p-1 rounded-full flex">
+                            <IconEdit />
+                        </a>
+                        <button
+                            onClick={() => {
+                            const confirmation = window.confirm(`Apakah Anda yakin ingin menhapus perusahaan ini`);
+                            if (confirmation) {
+                                handleDelete(perusahaanData.id_perusahaan);
+                            }
+                            }}
+                            href=""
+                            className="border border-black p-1 rounded-full flex hover:bg-black hover:text-white transition ease-in-out delay-150"
+                        >
+                            <IconTrash />
+                        </button>
                     </div>
                 </div>
-                <div className="p-2 flex gap-3">
+                {/* <div className="p-2 flex gap-3">
                     <img src="/Img/card_img.jpg" className="w-[50%] h-auto object-cover rounded-md" alt="" />
                     <div className="flex flex-col justify-between">
                         <div className="">
@@ -42,7 +61,7 @@ export default function CardLowongan()
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
