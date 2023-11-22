@@ -1,4 +1,4 @@
-function FormT({children})
+function Form({children})
 {
     return(
         <form action="" method="" className="p-5">
@@ -28,8 +28,8 @@ function InputFile()
     )
 }
 
-FormT.Label = Label
-FormT.InputText = InputText
-FormT.InputFile = InputFile
+Form.Label = Label
+Form.InputText = InputText
+Form.InputFile = InputFile
 
-export default FormT
+export default Form

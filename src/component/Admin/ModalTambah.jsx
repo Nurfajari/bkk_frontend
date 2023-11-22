@@ -17,7 +17,7 @@ const style = {
   boxShadow: 24,
 };
 
-function BasicModal() 
+function ModalTambah({children}) 
 {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -42,6 +42,9 @@ function BasicModal()
                 <button onClick={handleClose} className="flex items-center p-1 rounded-full hover:bg-slate-200/50 hover:text-black">
                     <IconX/>
                 </button>
+            </div>
+            <div className="p-5">
+              {children}
             </div>
         </Box>
       </Modal>
@@ -95,4 +98,4 @@ function BasicModal()
 // BasicModal.Title = Title
 // BasicModal.Content = Content
 
-export default BasicModal
+export default ModalTambah

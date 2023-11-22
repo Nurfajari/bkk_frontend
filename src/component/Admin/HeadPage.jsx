@@ -1,7 +1,7 @@
 import { IconSearch, IconSquareRoundedPlus } from "@tabler/icons-react"
-import BasicModal from "./Modal"
+import BasicModal from "./ModalTambah"
 import { Form } from "react-router-dom"
-import FormT from "./FormT"
+import FormT from "./Form"
 
 function HeadPage({children})
 {

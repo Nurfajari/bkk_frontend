@@ -3,7 +3,9 @@ import CardPerusahaan from '../../component/Admin/CardPerusahaan';
 import HeadPage from '../../component/Admin/HeadPage';
 import axios from "axios";
 import { useEffect, useState } from "react";
-import BasicModal from '../../component/Admin/Modal';
+import BasicModal from '../../component/Admin/ModalTambah';
+import { Form } from 'react-router-dom';
+import ModalTambah from '../../component/Admin/ModalTambah';
 
 const Perusahaan = () => {
   
@@ -33,9 +35,14 @@ const Perusahaan = () => {
         <HeadPage>
           <HeadPage.Title>Daftar Perusahaan</HeadPage.Title>
           <HeadPage.SearchAdd>
-            <BasicModal>
-
-            </BasicModal>
+            <ModalTambah>
+              <form action="">
+                <div className="">
+                  <label htmlFor="">Username :</label>
+                  <input type="text" className="p-2 mt-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" />
+                </div>
+              </form>
+            </ModalTambah>
           </HeadPage.SearchAdd>
         </HeadPage>
       </div>
