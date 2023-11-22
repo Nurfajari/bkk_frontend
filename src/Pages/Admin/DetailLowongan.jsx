@@ -100,11 +100,6 @@ export default function DetailLowongan()
                     </table>
                 </div>
             </div>
-            <div className="flex gap-2 items-center border-2 p-2 w-max rounded-md mb-5">
-                <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-black hover:text-white">Chat</a>
-                <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-lime-600 hover:text-white">Edit</a>
-                <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-red-600 hover:text-white">Hapus</a>
-            </div>
         </div>
     )
 }

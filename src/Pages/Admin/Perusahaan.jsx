@@ -3,6 +3,7 @@ import CardPerusahaan from '../../component/Admin/CardPerusahaan';
 import HeadPage from '../../component/Admin/HeadPage';
 import axios from "axios";
 import { useEffect, useState } from "react";
+import BasicModal from '../../component/Admin/Modal';
 
 const Perusahaan = () => {
   
@@ -31,7 +32,11 @@ const Perusahaan = () => {
       <div className="card-admin flex flex-col gap-y-5">
         <HeadPage>
           <HeadPage.Title>Daftar Perusahaan</HeadPage.Title>
-          <HeadPage.SearchAdd></HeadPage.SearchAdd>
+          <HeadPage.SearchAdd>
+            <BasicModal>
+
+            </BasicModal>
+          </HeadPage.SearchAdd>
         </HeadPage>
       </div>
       {perusahaanData.map((perusahaan, i) => (
