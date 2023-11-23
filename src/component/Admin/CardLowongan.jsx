@@ -2,6 +2,7 @@ import { IconChevronCompactDown, IconEdit, IconFilePencil, IconInfoCircle } from
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { IconTrash } from "@tabler/icons-react";
+import ModalEdit from "./ModalEdit";
 
 export default function CardLowongan()
 {
@@ -17,13 +18,19 @@ export default function CardLowongan()
                             <h1 className="text-3xl mb-2">
                                 <a href="/admin/lowongan/detail">PT Verta Logistic</a>
                             </h1>
-                            <h1 className="text-green-500">*Lowongan Buka</h1>
+                            <h1 className="text-green-500 bg-green-300/50 w-max px-[6px] rounded-md">Lowongan Buka</h1>
                         </div>
                     </div>
-                    <div className="flex gap-2">
-                        <a href="" className="bg-black text-white p-1 rounded-full flex">
+                    {/* <div className="flex gap-2 items-center border-2 p-2 w-max rounded-md">
+                        <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-black hover:text-white">Chat</a>
+                        <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-lime-600 hover:text-white">Edit</a>
+                        <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-red-600 hover:text-white">Hapus</a>
+                    </div> */}
+                    <div className="">
+                        <ModalEdit></ModalEdit>
+                        {/* <a href="" className="bg-black text-white p-1 rounded-full flex">
                             <IconEdit />
-                        </a>
+                        </a> */}
                         <button
                             onClick={() => {
                             const confirmation = window.confirm(`Apakah Anda yakin ingin menhapus perusahaan ini`);
@@ -31,7 +38,7 @@ export default function CardLowongan()
                                 handleDelete(perusahaanData.id_perusahaan);
                             }
                             }}
-                            href=""
+                            href="" 
                             className="border border-black p-1 rounded-full flex hover:bg-black hover:text-white transition ease-in-out delay-150"
                         >
                             <IconTrash />

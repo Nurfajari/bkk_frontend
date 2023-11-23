@@ -72,7 +72,7 @@ export default function CardPerusahaan({ perusahaanData }) {
                     handleDelete(perusahaanData.id_perusahaan);
                   }
                 }}
-                href=""
+                href="" 
                 className="border border-black p-1 rounded-full flex hover:bg-black hover:text-white transition ease-in-out delay-150"
               >
                 <IconTrash />

@@ -2,6 +2,8 @@ import { IconSearch } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HeadPage from "../../component/Admin/HeadPage";
+import ModalDetailTable from "../../component/Admin/ModalDetailTable";
+import ModalEditTable from "../../component/Admin/ModalEditTable";
 
 const Pelamar = () => {
   const [pelamar, setPelamar] = useState([]);
@@ -58,14 +60,8 @@ const Pelamar = () => {
                     <td className="p-3">{item.perusahaan}</td>
                     <td className="p-3">{item.status}</td>
                     <td className="p-3 flex gap-x-5 text-blue-500">
-                      <Link className="transition-all duration-500 hover:text-blue-700 relative group">
-                        Detail
-                        <div className="absolute bottom-0 w-0 bg-blue-700 h-[1px] transition-all duration-500 group-hover:w-full"></div>
-                      </Link>
-                      <Link className="transition-all duration-500 hover:text-yellow-500 relative group">
-                        Edit
-                        <div className="absolute bottom-0 w-0 bg-yellow-500 h-[1px] transition-all duration-500 group-hover:w-full"></div>
-                      </Link>
+                      <ModalDetailTable></ModalDetailTable>
+                      <ModalEditTable></ModalEditTable>
                       <Link className="transition-all duration-500 hover:text-red-500 relative group">
                         Hapus
                         <div className="absolute bottom-0 w-0 bg-red-500 h-[1px] transition-all duration-500 group-hover:w-full"></div>
