@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { IconSquareRoundedPlus, IconX } from '@tabler/icons-react';
+import { IconEdit } from '@tabler/icons-react';
 
 const style = {
   position: 'absolute',
@@ -17,7 +18,7 @@ const style = {
   boxShadow: 24,
 };
 
-function ModalTambah({children}) 
+function ModalEdit({children}) 
 {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -25,8 +26,8 @@ function ModalTambah({children})
 
   return (
     <div>
-      <button onClick={handleOpen} className="text-3xl text-white p-1 font-bold rounded-md bg-black">
-        <IconSquareRoundedPlus/>
+      <button onClick={handleOpen} className="bg-black text-white p-1 rounded-full flex mb-2">
+        <IconEdit />
       </button>
       <Modal
         open={open}
@@ -37,7 +38,7 @@ function ModalTambah({children})
         <Box sx={style}>
             <div className="flex items-center justify-between border-b-2 border-slate-200 p-3 mb-5">
                 <div className="">
-                    <h1 className="text-xl">Tambah Data</h1>
+                    <h1 className="text-xl">Edit Data</h1>
                 </div>
                 <button onClick={handleClose} className="flex items-center p-1 rounded-full hover:bg-slate-200/50 hover:text-black">
                     <IconX/>
@@ -52,4 +53,4 @@ function ModalTambah({children})
   );
 }
 
-export default ModalTambah
+export default ModalEdit
