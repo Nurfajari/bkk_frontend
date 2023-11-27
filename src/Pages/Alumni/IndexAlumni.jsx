@@ -3,12 +3,13 @@ import CardLowongan from "../../component/Alumni/CardLowongan";
 import CardPerusahaan from "../../component/Alumni/CardPerusahaan";
 import Footer from "../../component/Alumni/Footer";
 import Navbar from "../../component/Alumni/Navbar";
+import SectionUse from "../../component/Alumni/SectionUse";
 
 export default function IndexAlumni() {
   return (
     <>
       <div className="h-[550px] bg-[url('./Img/bg1.jpg')] bg-cover">
-        <div className="bg-slate-800/50 h-[550px]">
+        <div className="bg-gradient-to-r from-emerald-500 to-lime-500 h-[550px]">
           <div className="w-[50%] p-20 ">
             <h1 className="font-jura font-semibold text-4xl mb-5 mt-11 text-white">
               Welcome to BKK SMK Negeri 1 Kota Cirebon
@@ -22,19 +23,11 @@ export default function IndexAlumni() {
           </div>
         </div>
       </div>
-      <div className="mb-5">
-        <div className="p-6">
-          <div className="flex justify-center gap-7">
-            <img src="Img/logo2.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/Morfonica.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/Pastel_Palettes.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/Roselia.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/RAS.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-          </div>
-        </div>
+      <div className="">
+        <SectionUse></SectionUse>
       </div>
       <div className="">
-        <div className="flex flex-wrap gap-8 p-4 justify-center">
+        <div className="flex flex-wrap gap-4 px-[45px] justify-center">
           <CardPerusahaan></CardPerusahaan>
           <CardPerusahaan></CardPerusahaan>
           <CardPerusahaan></CardPerusahaan>
@@ -50,6 +43,17 @@ export default function IndexAlumni() {
           <CardLowongan />
           <CardLowongan />
           <CardLowongan />
+        </div>
+      </div>
+      <div className="mb-5">
+        <div className="p-6">
+          <div className="flex justify-center gap-7">
+            <img src="Img/logo2.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
+            <img src="Img/Morfonica.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
+            <img src="Img/Pastel_Palettes.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
+            <img src="Img/Roselia.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
+            <img src="Img/RAS.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
+          </div>
         </div>
       </div>
     </>

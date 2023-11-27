@@ -10,7 +10,7 @@ export default function Navbar()
     }
 
     return(
-        <nav className="navbar navbar-expand-lg navbar-ligh bg-gradient-to-r from-emerald-400 to-lime-500 text-white py-2">
+        <nav className="navbar navbar-expand-lg navbar-ligh ccc text-white py-2">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-10 mx-7 p-2 font-jura">
                     <div className="">
