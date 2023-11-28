@@ -1,6 +1,8 @@
 import Button from "../../component/Alumni/Button";
 import CardLowongan from "../../component/Alumni/CardLowongan";
 import CardPerusahaan from "../../component/Alumni/CardPerusahaan";
+import CarouselSlide from "../../component/Alumni/CarouselSlide";
+import Carousel from "../../component/Alumni/CarouselSlide";
 import Footer from "../../component/Alumni/Footer";
 import Navbar from "../../component/Alumni/Navbar";
 import SectionUse from "../../component/Alumni/SectionUse";
@@ -9,7 +11,7 @@ export default function IndexAlumni() {
   return (
     <>
       <div className="h-[550px] bg-[url('./Img/bg1.jpg')] bg-cover">
-        <div className="bg-gradient-to-r from-emerald-500 to-lime-500 h-[550px]">
+        <div className="bg-gradient-to-r from-black to-white/0 h-[550px]">
           <div className="w-[50%] p-20 ">
             <h1 className="font-jura font-semibold text-4xl mb-5 mt-11 text-white">
               Welcome to BKK SMK Negeri 1 Kota Cirebon
@@ -26,8 +28,9 @@ export default function IndexAlumni() {
       <div className="">
         <SectionUse></SectionUse>
       </div>
-      <div className="">
-        <div className="flex flex-wrap gap-4 px-[45px] justify-center">
+      <div className="mb-10">
+        <h1 className="text-center text-2xl font-jura font-bold mb-10">Perusahaan Yang Bekerja Sama</h1>
+        <div className="flex flex-wrap gap-10 px-3 justify-center">
           <CardPerusahaan></CardPerusahaan>
           <CardPerusahaan></CardPerusahaan>
           <CardPerusahaan></CardPerusahaan>
