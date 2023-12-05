@@ -18,29 +18,29 @@ export default function SectionUse()
                         <p className="font-jura opacity-75">Cari lowongan Pekerjaan Yang Anda Inginkan hanya dari Ponsel Anda Dimanapun kapanpun</p>
                     </div>
                     <div className="grid grid-cols-2 gap-5 mb-3">
-                        <div className="bg-lime-200 p-5 rounded-xl">
-                            <div className="mb-3 bg-gradient-to-r from-emerald-500 to-lime-500 p-2 max-w-max rounded-md">
+                        <div className="bg-cyan-200 p-5 rounded-xl">
+                            <div className="mb-3 bg-gradient-to-r from-cyan-500 to-blue-500 p-2 max-w-max rounded-md">
                                 <span className="text-white"><IconUserPlus/></span>
                             </div>
                             <h1 className="text-xl font-jura font-bold mb-2">Buat Profile</h1>
                             <p className="text-sm opacity-75">Buat akun profile untuk menarik perusahaan yang akan anda cari</p>
                         </div>
-                        <div className="bg-lime-200 p-5 rounded-xl">
-                            <div className="mb-3 bg-gradient-to-r from-emerald-500 to-lime-500 p-2 max-w-max rounded-md">
+                        <div className="bg-blue-200 p-5 rounded-xl">
+                            <div className="mb-3 bg-gradient-to-r from-cyan-500 to-blue-500 p-2 max-w-max rounded-md">
                                 <span className="text-white"><IconReportSearch/></span>
                             </div>
                             <h1 className="text-xl font-jura font-bold mb-2">Cari Lowongan</h1>
                             <p className="text-sm opacity-75">Cari lowongan yang anda inginkan sesuai dengan skill anda</p>
                         </div>
-                        <div className="bg-lime-200 p-5 rounded-xl">
-                            <div className="mb-3 bg-gradient-to-r from-emerald-500 to-lime-500 p-2 max-w-max rounded-md">
+                        <div className="bg-blue-200 p-5 rounded-xl">
+                            <div className="mb-3 bg-gradient-to-r from-cyan-500 to-blue-500 p-2 max-w-max rounded-md">
                                 <span className="text-white"><IconMessage/></span>
                             </div>
                             <h1 className="text-xl font-jura font-bold mb-2">Bantuan Admin</h1>
                             <p className="text-sm opacity-75">Chat admin jika ada kendala ataupun pertanyaan yang ingin anda tanyakan</p>
                         </div>
-                        <div className="bg-lime-200 p-5 rounded-xl">
-                            <div className="mb-3 bg-gradient-to-r from-emerald-500 to-lime-500 p-2 max-w-max rounded-md">
+                        <div className="bg-cyan-200 p-5 rounded-xl">
+                            <div className="mb-3 bg-gradient-to-r from-cyan-500 to-blue-500 p-2 max-w-max rounded-md">
                                 <span className="text-white"><IconFileCv/></span>
                             </div>
                             <h1 className="text-xl font-jura font-bold mb-2">Kirim CV</h1>

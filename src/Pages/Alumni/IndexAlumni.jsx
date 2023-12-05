@@ -21,7 +21,7 @@ export default function IndexAlumni() {
               Sekolah Menengah Kejuruan Negeri dan Swasta, sebagai unit pelaksana
               yang memberikan pelayanan dan informasi lowongan kerja, penyaluran dan penempatan tenaga kerja.
             </p>
-            <Button text="Cari Lowongan" className="mt-8 bg-blue-600 hover:bg-blue-600/75 text-white rounded-md py-2 px-5"></Button>
+            <Button text="Cari Lowongan" className="mt-8 bg-gradient-to-r from-cyan-500 to-blue-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 text-white rounded-md py-2 px-5"></Button>
           </div>
         </div>
       </div>
@@ -41,11 +41,23 @@ export default function IndexAlumni() {
       </div>
       <div className="snap-start">
         <h1 className="text-center text-3xl">Lowongan</h1>
-        <div className="p-3 py-10 grid grid-cols-2 gap-5">
+        <div className="px-5 py-10 flex flex-wrap gap-5">
           <CardLowongan />
           <CardLowongan />
           <CardLowongan />
           <CardLowongan />
+          <CardLowongan />
+        </div>
+      </div>
+      <div className="p-6">
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-20 rounded-xl">
+          <div className="text-center mb-5">
+            <h1 className="font-jura text-3xl font-bold">Yuk mulai cari pekerjaan Bersama kami</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam accusantium saepe laudantium dignissimos, similique, voluptatibus, et atque inventore officia earum minus amet neque consequatur? Sunt provident et aliquid perspiciatis.</p>
+          </div>
+          <div className="text-center">
+            <button className="bg-black text-white p-2 px-5 font-semibold font-jura rounded-md">Get Started</button>
+          </div>
         </div>
       </div>
       <div className="mb-5">
