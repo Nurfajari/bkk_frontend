@@ -4,8 +4,10 @@ const AlumniLowongan = () => {
   return (
     <>
       <div className="container-full">
-        <h1 className='text-center font-jura font-bold text-3xl m-10'>LOWONGAN</h1>
-        <div class="grid grid-cols-2 gap-4 mx-4 my-7">
+        <div className="ms-3 mb-3 ps-2 border-s-2 border-black">
+          <h1 className="text-2xl">Daftar Lowongan</h1>
+        </div>
+        <div class="flex flex-wrap gap-5 mx-4 my-7">
             <CardLowongan/>
             <CardLowongan/>
             <CardLowongan/>
