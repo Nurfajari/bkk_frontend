@@ -1,8 +1,10 @@
 import { IconEdit, IconTrash } from '@tabler/icons-react';
 import axios from 'axios';
 import ModalEdit from './ModalEdit';
+import { useParams } from 'react-router-dom';
+import { Result } from 'postcss';
 // import axios from "axios"
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 export default function CardPerusahaan({ perusahaanData }) {
   const handleDelete = async (id) => {
     try {
@@ -13,6 +15,24 @@ export default function CardPerusahaan({ perusahaanData }) {
       console.error('Gagal menghapus perusahaan', err);
     }
   };
+
+  const [id, setId]= useState();
+  const [data,setPerusahaan]=useState([]);
+  useEffect(() => {
+    fetchData(id);
+  }, [id]); 
+
+  const fetchData = async (id) => {
+    try {
+      const view = await axios.get('http://127.0.0.1:8000/api/perusahaan/'+ id);
+      console.log(view.data);
+      setPerusahaan(view.data);
+      // Setelah penghapusan berhasil, Anda dapat memperbarui state atau melakukan hal lain yang diperlukan.
+    } catch (err) {
+      console.error('lihat data', err);
+    }
+  };
+
   return (
     <div>
       <div className="bg-white my-5 font-jura border-s-4 border-black shadow-md card-admin">
@@ -28,11 +48,11 @@ export default function CardPerusahaan({ perusahaanData }) {
           </div>
           <div className="text-center">
             <div className="">
-              <ModalEdit>
+              <ModalEdit id_perusahaanN={perusahaanData.id}>
                 <form action="" className="flex flex-col h-max">
                   <div className="mb-3">
                     <label htmlFor="">Nama Perusahaan :</label>
-                    <input type="text" className="p-2 mt-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" />
+                    <input type="text" className="p-2 mt-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" value={data.nama_perusahaan} />
                   </div>
                   <div className="mb-3">
                     <label htmlFor="">Kontak :</label>
