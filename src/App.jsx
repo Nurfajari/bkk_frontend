@@ -16,6 +16,7 @@ import AlumniLowonganDetail from "./Pages/Alumni/LowonganDetail";
 import AlumniLayout from "./Layout/AlumniLayout";
 import DetailPerusahaan from "./Pages/Admin/DetailPerusahaan";
 import DetailLowongan from "./Pages/Admin/DetailLowongan";
+import DetailLamaran from "./Pages/Admin/DetailLamaran";
 
 export default function App() {
   const statusLoginUser = localStorage.getItem("statusLogin") ?? null;
@@ -42,6 +43,7 @@ export default function App() {
             <Route path="lowongan/detail" element={<DetailLowongan />} />
             <Route path="lowongan/1" element={<ChatLowongan />} />
             <Route path="pelamar" element={<Pelamar />} />
+            <Route path="pelamar/detail" element={<DetailLamaran />} />
           </Route>
           <Route path="/alumni" element={<AlumniLayout />}>
             <Route index element={<IndexAlumni />} />

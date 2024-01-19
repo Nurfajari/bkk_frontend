@@ -12,18 +12,27 @@ const Pelamar = () => {
     setPelamar([
       {
         nama: "Moh. Faizal Agathon",
+        jenis_kelamin: "Laki-laki",
+        umur: "18",
         perusahaan: "PT Pilar Solusi Indonesia",
         status: "Melamar",
+        deadline: "19 juni",
       },
       {
         nama: "Moh. Agathon",
+        jenis_kelamin: "Laki-laki",
+        umur: "18",
         perusahaan: "PT Pilar Solusi Indonesia",
         status: "Melamar",
+        deadline: "19 juni",
       },
       {
         nama: "Moh. Faizal",
+        jenis_kelamin: "Laki-laki",
+        umur: "18",
         perusahaan: "PT Pilar Solusi Indonesia",
         status: "Melamar",
+        deadline: "19 juni",
       },
     ]);
   }, []);
@@ -41,8 +50,11 @@ const Pelamar = () => {
               <tr>
                 <th className="p-3">#</th>
                 <th className="p-3">Nama</th>
+                <th className="p-3">Jenis Kelamin</th>
+                <th className="p-3">Umur</th>
                 <th className="p-3">Perusahaan</th>
                 <th className="p-3">Status</th>
+                <th className="p-3">Deadline</th>
                 <th className="p-3" width="10%">
                   Opsi
                 </th>
@@ -57,15 +69,13 @@ const Pelamar = () => {
                   >
                     <td className="p-3">{i + 1}</td>
                     <td className="p-3">{item.nama}</td>
+                    <td className="p-3">{item.jenis_kelamin}</td>
+                    <td className="p-3">{item.umur}</td>
                     <td className="p-3">{item.perusahaan}</td>
                     <td className="p-3">{item.status}</td>
+                    <td className="p-3">{item.deadline}</td>
                     <td className="p-3 flex gap-x-5 text-blue-500">
-                      <ModalDetailTable></ModalDetailTable>
-                      <ModalEditTable></ModalEditTable>
-                      <Link className="transition-all duration-500 hover:text-red-500 relative group">
-                        Hapus
-                        <div className="absolute bottom-0 w-0 bg-red-500 h-[1px] transition-all duration-500 group-hover:w-full"></div>
-                      </Link>
+                      <a href="/admin/pelamar/detail">Detail</a>
                     </td>
                   </tr>
                 );
