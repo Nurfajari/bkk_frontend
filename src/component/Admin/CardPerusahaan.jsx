@@ -36,14 +36,14 @@ export default function CardPerusahaan({ perusahaanData }) {
   return (
     <div>
       <div className="bg-white my-5 font-jura border-s-4 border-black shadow-md card-admin">
-        <div className="flex flex-wrap justify-between items-center p-3 py-5">
-          <div className="flex gap-2 items-center">
-            <div className="">
-              <img src="/Img/logo3.jpg" className="w-24 rounded-full" alt="" />
+        <div className="flex flex-wrap justify-between items-center p-2">
+          <div className="">
+            <div className="flex gap-2 items-center">
+              <img src="/Img/logo3.jpg" className="w-16 rounded-full" alt="" />
+              <h1 className="text-xl font-bold"><a href="/admin/perusahaan/detail">{perusahaanData.nama_perusahaan}</a></h1>
             </div>
             <div className="">
-              <h1 className="text-2xl mb-2 font-bold"><a href="/admin/perusahaan/detail">{perusahaanData.nama_perusahaan}</a></h1>
-              <p>{perusahaanData.alamat_perusahaan}</p>
+              {/* <p>{perusahaanData.alamat_perusahaan}</p> */}
             </div>
           </div>
           <div className="text-center">

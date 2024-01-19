@@ -95,7 +95,7 @@ const Login = () => {
     <>
       <div className="relative h-screen w-full">
         <img
-          src="/Img/profile-company-4.jpg"
+          src="/Img/login.jpg"
           alt=""
           className="image-cover object-center"
         />
