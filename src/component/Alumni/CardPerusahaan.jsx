@@ -1,7 +1,7 @@
 export default function CardPerusahaan() {
   return (
     <a
-      href=""
+      href="/alumni/perusahaan/detail"
       className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100"
     >
       <div className=" w-full">

@@ -9,40 +9,41 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white py-2 mb-5">
-      <div className="flex justify-between items-center">
+    <nav className="navbar navbar-expand-lg bg-white py-2 border-b">
+      <div className="flex justify-between items-center px-3">
         <div className="flex items-center gap-10 mx-7 p-2 font-jura">
-          <div className="">
+          <div className="flex items-center gap-2">
             <img src="/Img/logo.png" className="w-8 rounded-full" alt="" />
-          </div>
-          <div className="flex gap-6 items-center">
-            <a
-              href="/alumni"
-              className="hover:border hover:border-black px-3 rounded-md"
-            >
-              Home
-            </a>
-            <a
-              href="/alumni/lowongan"
-              className="hover:border hover:border-black px-3 rounded-md"
-            >
-              Lowongan
-            </a>
-            <a
-              href="/alumni/perusahaan"
-              className="hover:border hover:border-black px-3 rounded-md"
-            >
-              Perusahaan
-            </a>
-            <button
-              onClick={handleLogOut}
-              className="hover:border hover:border-black px-3 rounded-md"
-            >
-              Logout
-            </button>
+            <h1 className="font-bold">BKK NEPPER</h1>
           </div>
         </div>
-        <div className="me-6">
+        <div className="flex gap-8 items-center justify-center">
+          <a
+            href="/alumni"
+            className="hover:border hover:bg-[#4A9CCB] hover:text-white py-2 px-5 rounded-md"
+          >
+            Home
+          </a>
+          <a
+            href="/alumni/lowongan"
+            className="hover:border hover:bg-[#4A9CCB] hover:text-white py-2 px-5 rounded-md"
+          >
+            Lowongan
+          </a>
+          <a
+            href="/alumni/perusahaan"
+            className="hover:border hover:bg-[#4A9CCB] hover:text-white py-2 px-5 rounded-md"
+          >
+            Perusahaan
+          </a>
+          <button
+            onClick={handleLogOut}
+            className="hover:border hover:bg-[#4A9CCB] hover:text-white py-2 px-5 rounded-md"
+          >
+            Logout
+          </button>
+        </div>
+        {/* <div className="me-6">
           <a href="" className="text-green-500">
             Sign In{" "}
           </a>
@@ -51,7 +52,7 @@ export default function Navbar() {
             {" "}
             Sign Up
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
