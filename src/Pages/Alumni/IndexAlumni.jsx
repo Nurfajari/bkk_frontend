@@ -10,18 +10,21 @@ import SectionUse from "../../component/Alumni/SectionUse";
 export default function IndexAlumni() {
   return (
     <>
-      <div className="h-[550px] bg-[url('./Img/bg1.jpg')] bg-cover">
-        <div className="bg-gradient-to-r from-black to-white/0 h-[550px]">
-          <div className="w-[50%] p-20 ">
-            <h1 className="font-jura font-semibold text-4xl mb-5 mt-11 text-white">
+      <div className="h-auto md:h-[550px] bg-[url('./Img/bg1.jpg')] bg-center bg-auto md:bg-cover">
+        <div className="md:bg-gradient-to-r md:from-black to-white/0 bg-black/50 h-auto md:h-[550px]">
+          <div className="w-full md:w-[50%] p-[70px] md:p-20 text-center md:text-start">
+            <h1 className="font-jura font-semibold text-2xl md:text-4xl mb-5 mt-0 md:mt-11 text-white md:text-white">
               Welcome to BKK SMK Negeri 1 Kota Cirebon
             </h1>
-            <p className="text-white opacity-75">
-              Bursa Kerja Khusus (BKK) adalah sebuah lembaga yang dibentuk di
-              Sekolah Menengah Kejuruan Negeri dan Swasta, sebagai unit pelaksana
-              yang memberikan pelayanan dan informasi lowongan kerja, penyaluran dan penempatan tenaga kerja.
+            <p className="text-white md:text-white text-sm md:text-md opacity-75">
+              Bursa Kerja Khusus (BKK) adalah unit pelaksana yang memberikan
+              pelayanan dan informasi lowongan kerja, penyaluran dan penempatan
+              tenaga kerja yang ada Sekolah Menengah Kejuruan Negeri dan Swasta
             </p>
-            <Button text="Cari Lowongan" className="mt-8 bg-gradient-to-r from-cyan-500 to-blue-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 text-white rounded-md py-2 px-5"></Button>
+            <Button
+              text="Cari Lowongan"
+              className="mt-8 bg-gradient-to-r from-cyan-500 to-blue-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 text-white rounded-md py-2 px-5"
+            ></Button>
           </div>
         </div>
       </div>
@@ -29,10 +32,10 @@ export default function IndexAlumni() {
         <SectionUse></SectionUse>
       </div>
       <div className="mb-10">
-        <h1 className="text-center text-2xl font-jura font-bold mb-10">Perusahaan Yang Bekerja Sama</h1>
-        <div className="flex flex-wrap gap-10 px-3 justify-center">
-          <CardPerusahaan></CardPerusahaan>
-          <CardPerusahaan></CardPerusahaan>
+        <h1 className="text-center text-xl md:text-2xl font-jura font-bold mb-10">
+          Perusahaan Yang Bekerja Sama
+        </h1>
+        <div className="flex flex-col w-full items-center md:flex-row md:flex-wrap gap-5 px-1 justify-center">
           <CardPerusahaan></CardPerusahaan>
           <CardPerusahaan></CardPerusahaan>
           <CardPerusahaan></CardPerusahaan>
@@ -40,9 +43,8 @@ export default function IndexAlumni() {
         </div>
       </div>
       <div className="snap-start">
-        <h1 className="text-center text-3xl">Lowongan</h1>
-        <div className="px-5 py-10 flex flex-wrap gap-5">
-          <CardLowongan />
+        <h1 className="text-center text-xl md:text-3xl">Lowongan</h1>
+        <div className="px-5 py-10 flex-col flex md:flex-row justify-center md:flex-wrap gap-5">
           <CardLowongan />
           <CardLowongan />
           <CardLowongan />
@@ -50,24 +52,53 @@ export default function IndexAlumni() {
         </div>
       </div>
       <div className="p-6">
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-20 rounded-xl">
-          <div className="text-center mb-5">
-            <h1 className="font-jura text-3xl font-bold">Yuk mulai cari pekerjaan Bersama kami</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam accusantium saepe laudantium dignissimos, similique, voluptatibus, et atque inventore officia earum minus amet neque consequatur? Sunt provident et aliquid perspiciatis.</p>
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-10 md:p-20 rounded-xl">
+          <div className="text-start text-white md:text-center mb-10">
+            <h1 className="font-jura mb-5 text-xl md:text-3xl font-bold">
+              Yuk mulai cari pekerjaan Bersama kami
+            </h1>
+            <p className="opacity-75 text-sm md:text-md">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quam accusantium saepe laudantium dignissimos, similique,
+              voluptatibus, et atque inventore officia earum minus amet neque
+              consequatur? Sunt provident et aliquid perspiciatis.
+            </p>
           </div>
-          <div className="text-center">
-            <button className="bg-black text-white p-2 px-5 font-semibold font-jura rounded-md">Get Started</button>
+          <div className="text-start md:text-center">
+            <button className="bg-black text-white p-2 px-5 font-semibold font-jura rounded-md">
+              Get Started
+            </button>
           </div>
         </div>
       </div>
       <div className="mb-5">
         <div className="p-6">
-          <div className="flex justify-center gap-7">
-            <img src="Img/logo2.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/Morfonica.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/Pastel_Palettes.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/Roselia.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
-            <img src="Img/RAS.png" className="w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" alt="" />
+          <div className="flex flex-col md:flex-row justify-center items-center gap-7">
+            <img
+              src="Img/logo2.png"
+              className="w-60 md:w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              alt=""
+            />
+            <img
+              src="Img/Morfonica.png"
+              className="w-60 md:w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              alt=""
+            />
+            <img
+              src="Img/Pastel_Palettes.png"
+              className="w-60 md:w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              alt=""
+            />
+            <img
+              src="Img/Roselia.png"
+              className="w-60 md:w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              alt=""
+            />
+            <img
+              src="Img/RAS.png"
+              className="w-60 md:w-40 grayscale hover:grayscale-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              alt=""
+            />
           </div>
         </div>
       </div>
