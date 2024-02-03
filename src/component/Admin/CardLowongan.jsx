@@ -26,7 +26,7 @@ export default function CardLowongan()
                         <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-lime-600 hover:text-white">Edit</a>
                         <a href="" className="transition ease-in-out delay-150 text-black py-1 px-7 rounded-md hover:bg-red-600 hover:text-white">Hapus</a>
                     </div> */}
-                    <div className="">
+                    <div className="flex items-center gap-2">
                         <ModalEdit></ModalEdit>
                         {/* <a href="" className="bg-black text-white p-1 rounded-full flex">
                             <IconEdit />
@@ -39,9 +39,10 @@ export default function CardLowongan()
                             }
                             }}
                             href="" 
-                            className="border border-black p-1 rounded-full flex hover:bg-black hover:text-white transition ease-in-out delay-150"
+                            className="text-black border border-black p-1 px-2 rounded-md flex items-center hover:bg-black hover:text-white transition ease-in-out delay-150"
                         >
                             <IconTrash />
+                            Delete
                         </button>
                     </div>
                 </div>

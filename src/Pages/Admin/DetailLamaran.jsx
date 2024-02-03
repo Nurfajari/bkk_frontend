@@ -1,11 +1,18 @@
+import { IconArrowNarrowLeft } from "@tabler/icons-react";
 import HeadPage from "../../component/Admin/HeadPage";
+import { Link } from "react-router-dom";
 
 export default function DetailLamaran()
 {
     return(
         <div className="card-admin flex flex-col gap-y-5">
             <HeadPage>
-                <HeadPage.Title>Detail Lamaran</HeadPage.Title>
+                <HeadPage.Title>
+                        <Link to="/admin/pelamar">
+                            <IconArrowNarrowLeft/>
+                        </Link>
+                    Detail Lamaran
+                </HeadPage.Title>
                 <HeadPage.SearchAdd></HeadPage.SearchAdd>
             </HeadPage>
             <div className="px-6 rounded-md">

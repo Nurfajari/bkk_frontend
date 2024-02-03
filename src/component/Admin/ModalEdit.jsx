@@ -26,8 +26,9 @@ function ModalEdit({children})
 
   return (
     <div>
-      <button onClick={handleOpen} className="bg-black text-white p-1 rounded-full flex mb-2">
+      <button onClick={handleOpen} className="bg-black hover:bg-black/75 text-white p-1 px-3 flex items-center gap-1 rounded-md">
         <IconEdit />
+        Edit
       </button>
       <Modal
         open={open}

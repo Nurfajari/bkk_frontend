@@ -46,7 +46,7 @@ export default function CardPerusahaan({ perusahaanData }) {
               {/* <p>{perusahaanData.alamat_perusahaan}</p> */}
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center flex items-center gap-2">
             <div className="">
               <ModalEdit id_perusahaanN={perusahaanData.id}>
                 <form action="" className="flex flex-col h-max">
@@ -93,9 +93,10 @@ export default function CardPerusahaan({ perusahaanData }) {
                   }
                 }}
                 href="" 
-                className="border border-black p-1 rounded-full flex hover:bg-black hover:text-white transition ease-in-out delay-150"
+                className="text-black border border-black p-1 px-2 rounded-md flex items-center hover:bg-black hover:text-white transition ease-in-out delay-150"
               >
                 <IconTrash />
+                Delete
               </button>
             </div>
           </div>

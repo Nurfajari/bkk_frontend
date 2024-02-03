@@ -47,7 +47,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="bg-black py-2 text-center">
-          <span className="text-white">Created By ...</span>
+          <span className="text-white text-xs">Created By ...</span>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ function HeadPage({children})
 function Title({children})
 {
     return(
-        <h1 className="text-2xl">{children}</h1>
+        <h1 className="text-2xl flex items-center gap-2">{children}</h1>
     )
 }
 

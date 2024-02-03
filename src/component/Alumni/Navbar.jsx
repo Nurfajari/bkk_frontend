@@ -10,22 +10,23 @@ export default function Navbar()
     }
 
     return(
-        <nav className="navbar navbar-expand-lg navbar-light py-2">
+        <nav className="navbar navbar-expand-lg bg-white py-2">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-10 mx-7 p-2 font-jura">
                     <div className="">
                         <img src="/Img/logo.png" className="w-8 rounded-full" alt="" />
                     </div>
-                </div>
-                <div className="flex gap-6">
-                    <a href="/alumni" className="transtition all hover:border px-3 rounded-md delay-150 duration-75">Home</a>
-                    <a href="/alumni/lowongan" className="transtition all hover:border px-3 rounded-md delay-150 duration-75">Lowongan</a>
-                    <a href="/alumni/perusahaan" className="transtition all hover:border px-3 rounded-md delay-150 duration-75">Perusahaan</a>
-                    <button onClick={handleLogOut} className="transtition all hover:border px-3 rounded-md delay-150 duration-75">Logout</button>
+                    <div className="flex gap-6 items-center">
+                        <a href="/alumni" className="hover:border hover:border-black px-3 rounded-md">Home</a>
+                        <a href="/alumni/lowongan" className="hover:border hover:border-black px-3 rounded-md">Lowongan</a>
+                        <a href="/alumni/perusahaan" className="hover:border hover:border-black px-3 rounded-md">Perusahaan</a>
+                        <button onClick={handleLogOut} className="hover:border hover:border-black px-3 rounded-md">Logout</button>
+                    </div>
                 </div>
                 <div className="me-6">
-                    <a href="">Sign In / </a>
-                    <a href="">Sign Up</a>
+                    <a href="" className="text-green-500">Sign In </a>
+                    ||
+                    <a href="" className="text-red-500"> Sign Up</a>
                 </div>
             </div>
         </nav>
