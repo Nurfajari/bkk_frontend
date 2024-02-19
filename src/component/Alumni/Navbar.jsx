@@ -101,7 +101,7 @@ export default function Navbar() {
               </div>
               <button
                 onClick={closeMenu}
-                className="m-5 border p-2 flex items-center gap-2 justify-center text-white bg-red-500 rounded-md"
+                className="m-5 border p-2 flex items-center gap-2 justify-center bg-red-500 rounded-md"
               >
                 <IconSquareRoundedX />
                 Close
