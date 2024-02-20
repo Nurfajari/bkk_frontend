@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const AlumniLowonganDetail = () => {
     return (
-        <div className="flex flex-row p-5 gap-5">
-            <div className="w-[70%]">
+        <div className="flex flex-col md:flex-row p-5 gap-5">
+            <div className="w-full md:w-[70%]">
                 <a
                     href="/alumni/lowongan"
                     className="flex items-center gap-2 text-xl mb-3"
@@ -22,7 +22,7 @@ const AlumniLowonganDetail = () => {
                     <h1 className="font-semibold text-xl my-2">
                         PT. Air Logistic
                     </h1>
-                    <h1 className="my-2">Alamat : </h1>
+                    <h1 className="my-2 font-semibold">Alamat : </h1>
                     <p className="my-2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laboriosam, ullam atque ea eligendi, molestiae tempora,
@@ -31,8 +31,8 @@ const AlumniLowonganDetail = () => {
                         voluptatibus eos?
                     </p>
                 </div>
-                <p className="my-2">Kontak : ...</p>
-                <h1>Kualifikasi : </h1>
+                <p className="my-2 font-semibold">Kontak : ...</p>
+                <h1 className="font-semibold">Kualifikasi : </h1>
                 <ul className="list-inside list-disc">
                     <li>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -48,7 +48,7 @@ const AlumniLowonganDetail = () => {
                     </li>
                 </ul>
             </div>
-            <div className="w-[30%] mt-10">
+            <div className="w-full md:w-[30%] mt-1 md:mt-10">
                 <button className="w-full bg-[#4A9CCB] py-2 px-4 text-white font-semibold rounded-md mb-3">
                     Daftar
                 </button>
